@@ -1,6 +1,6 @@
 const Skill = () => {
   return (
-    <div>
+    <section className="skill-section">
       <h2>My Skills</h2>
       <div className="skill-group">
         <h3>Programming Language</h3>
@@ -62,7 +62,7 @@ const Skill = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

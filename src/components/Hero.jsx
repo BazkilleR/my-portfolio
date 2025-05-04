@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero-section">
       <div className="hero-text">
         <p>Hi, I’m</p>
         <h1>Ratchaphon Khawkhiew</h1>
@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="hero-image">
         <img src="#" alt="Hero" />
       </div>
-    </div>
+    </section>
   );
 };
 
