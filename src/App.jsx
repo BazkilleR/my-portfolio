@@ -3,6 +3,7 @@ import Hero from "./components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Skill from "./components/Skill.jsx";
 import Project from "./components/Project.jsx";
+import Experience from "./components/Experience.jsx";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Hero />
       <Skill />
       <Project />
+      <div>
+        <Experience />
+      </div>
     </div>
   );
 }
