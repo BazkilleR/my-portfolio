@@ -5,6 +5,7 @@ import Skill from "./components/Skill.jsx";
 import Project from "./components/Project.jsx";
 import Experience from "./components/Experience.jsx";
 import Education from "./components/Education.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Experience />
         <Education />
       </div>
+      <Footer />
     </div>
   );
 }

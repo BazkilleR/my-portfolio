@@ -7,22 +7,24 @@ const Experience = () => {
         <h3 className="e-title">Full-Stack Developer</h3>
         <p className="e-sub">Sharegreenth</p>
         <p className="e-descr">
-          <li>
-            Developed a responsive website for an environmental art contest to
-            boost trust and participant engagement
-          </li>
-          <li>
-            Increased IG followers engagement through website traffic
-            integration
-          </li>
-          <li>
-            Built both front-end and back-end systems, including registration
-            forms and content management.
-          </li>
-          <li>
-            Collaborated with the social media team to ensure consistent
-            branding and user experience.
-          </li>
+          <ul>
+            <li>
+              Developed a responsive website for an environmental art contest to
+              boost trust and participant engagement
+            </li>
+            <li>
+              Increased IG followers engagement through website traffic
+              integration
+            </li>
+            <li>
+              Built both front-end and back-end systems, including registration
+              forms and content management.
+            </li>
+            <li>
+              Collaborated with the social media team to ensure consistent
+              branding and user experience.
+            </li>
+          </ul>
         </p>
       </div>
     </section>
