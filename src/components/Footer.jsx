@@ -5,8 +5,6 @@ const Footer = () => {
     { href: "#", alt: "github-icon", img: "/icons/github.png" },
   ];
 
-  const navItems = ["HOME", "SKILLS", "PROJECT", "EXPERIENCE", "EDUCATION"];
-
   return (
     <footer>
       <div className="footer-content">
@@ -19,16 +17,6 @@ const Footer = () => {
                 <a href={link.href}>
                   <img src={link.img} alt={link.alt} />
                 </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="footer-nav">
-          <ul>
-            {navItems.map((item, index) => (
-              <li key={index}>
-                <a>{item}</a>
               </li>
             ))}
           </ul>
