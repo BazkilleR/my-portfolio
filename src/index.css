@@ -442,4 +442,19 @@ nav {
     font-size: 12px;
     padding: 5px 8px;
   }
+
+  .e-card .date {
+    font-size: var(--font-size-paragraph-mb);
+  }
+
+  .e-card .title {
+    font-size: var(--font-size-subheadline-mb);
+  }
+  .e-card .descr {
+    font-size: var(--font-size-paragraph-mb);
+  }
+
+  .e-card .sub {
+    font-size: var(--font-size-paragraph-mb);
+  }
 }
