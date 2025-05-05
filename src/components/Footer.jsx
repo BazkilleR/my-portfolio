@@ -1,8 +1,8 @@
 const Footer = () => {
   const socialLinks = [
-    { href: "#", alt: "email-icon", img: "#" },
-    { href: "#", alt: "tel-icon", img: "#" },
-    { href: "#", alt: "github-icon", img: "#" },
+    { href: "#", alt: "email-icon", img: "/icons/email.png" },
+    { href: "#", alt: "tel-icon", img: "/icons/tel.png" },
+    { href: "#", alt: "github-icon", img: "/icons/github.png" },
   ];
 
   const navItems = ["HOME", "SKILLS", "PROJECT", "EXPERIENCE"];
@@ -24,13 +24,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        <nav className="footer-nav">
+        <div className="footer-nav">
           <ul>
             {navItems.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index}>
+                <a>{item}</a>
+              </li>
             ))}
           </ul>
-        </nav>
+        </div>
       </div>
     </footer>
   );
