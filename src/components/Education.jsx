@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <section className="education-section">
+    <section className="education-section" id="education">
       <div className="headline-container">
         <h2 className="headline gradient-purple">Education</h2>
       </div>

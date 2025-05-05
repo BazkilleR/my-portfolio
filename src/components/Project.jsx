@@ -53,7 +53,7 @@ const projectData = {
 
 const Project = () => {
   return (
-    <div className="project-section">
+    <div className="project-section" id="projects">
       <div className="project-content">
         <div className="headline-container">
           <h2 className="headline gradient-purple">Projects</h2>

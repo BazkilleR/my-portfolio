@@ -5,7 +5,7 @@ const Footer = () => {
     { href: "#", alt: "github-icon", img: "/icons/github.png" },
   ];
 
-  const navItems = ["HOME", "SKILLS", "PROJECT", "EXPERIENCE"];
+  const navItems = ["HOME", "SKILLS", "PROJECT", "EXPERIENCE", "EDUCATION"];
 
   return (
     <footer>

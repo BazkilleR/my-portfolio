@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <section className="experience-section">
+    <section className="experience-section" id="experience">
       <div className="headline-container">
         <h2 className="headline gradient-purple">Experience</h2>
       </div>

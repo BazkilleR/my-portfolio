@@ -17,16 +17,19 @@ const Navbar = () => {
         <div className="nav-menu" id="navMenu">
           <ul>
             <li>
-              <a href="#">HOME</a>
+              <a href="#home">HOME</a>
             </li>
             <li>
-              <a href="#">SKILLS</a>
+              <a href="#skills">SKILLS</a>
             </li>
             <li>
-              <a href="#">PROJECT</a>
+              <a href="#projects">PROJECT</a>
             </li>
             <li>
-              <a href="#">EXPERIENCE</a>
+              <a href="#experience">EXPERIENCE</a>
+            </li>
+            <li>
+              <a href="#education">EDUCATION</a>
             </li>
           </ul>
         </div>
