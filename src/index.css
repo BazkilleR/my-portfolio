@@ -1,7 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* ---------------------------- */
+/*      IMPORT GOOGLE FONTS    */
+/* ---------------------------- */
 
-/* Root Variables */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* ---------------------------- */
+/*         ROOT VARIABLES      */
+/* ---------------------------- */
+
 :root {
   --font-size-headline: 48px;
   --font-size-headline-mb: 36px;
@@ -9,6 +17,7 @@
   --font-size-subheadline-mb: 20px;
   --font-size-paragraph: 16px;
   --font-size-paragraph-mb: 14px;
+
   --white-color: #fffffe;
   --purple-color: #7f5af0;
   --black-color: #16161a;
@@ -16,7 +25,10 @@
   --detail-color: #4c5560;
 }
 
-/* Global Styles */
+/* ---------------------------- */
+/*         GLOBAL STYLES       */
+/* ---------------------------- */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -24,23 +36,36 @@
 }
 
 body {
-  font-family: "Montserrat", "Open Sans", "Inter", sans-serif;
+  font-family: "Montserrat", "Inter", sans-serif;
   background-color: #1e1e1e;
   color: var(--white-color);
 }
 
-/* Gradient Text */
+/* ---------------------------- */
+/*          TEXT STYLES        */
+/* ---------------------------- */
+
 .gradient-purple {
-  background: linear-gradient(
-    90deg,
-    rgba(127, 90, 240, 1) 0%,
-    rgba(255, 255, 255, 1) 70%
-  );
+  background: linear-gradient(90deg, #7f5af0 0%, #ffffff 70%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Navigation */
+.headline-container {
+  margin-bottom: 50px;
+}
+
+.headline {
+  font-family: "Montserrat", sans-serif;
+  display: inline;
+  font-size: var(--font-size-headline);
+  font-weight: 700;
+}
+
+/* ---------------------------- */
+/*         NAVIGATION          */
+/* ---------------------------- */
+
 nav {
   background-color: var(--black-color);
   height: 80px;
@@ -81,7 +106,10 @@ nav {
   border-radius: 5px;
 }
 
-/* Hero Section */
+/* ---------------------------- */
+/*         HERO SECTION        */
+/* ---------------------------- */
+
 .hero {
   background-color: var(--black-color);
   padding: 0 20px;
@@ -114,11 +142,16 @@ nav {
 }
 
 .hero-description {
+  font-family: "Open Sans", sans-serif;
   font-size: var(--font-size-paragraph);
   font-weight: 400;
   color: var(--detail-color);
   margin-top: 20px;
 }
+
+/* ---------------------------- */
+/*       HERO CONTACTS         */
+/* ---------------------------- */
 
 .hero-contacts {
   display: flex;
@@ -147,13 +180,22 @@ nav {
   height: 51px;
 }
 
-.hero-img {
+/* ---------------------------- */
+/*         HERO IMAGE          */
+/* ---------------------------- */
+
+.hero-img img {
   width: 500px;
   height: 500px;
   background-color: var(--grey-color);
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-/* Resume Button */
+/* ---------------------------- */
+/*         RESUME BUTTON       */
+/* ---------------------------- */
+
 .resume-btn {
   padding: 10px 20px;
   border-radius: 5px;
@@ -164,13 +206,64 @@ nav {
 }
 
 .resume-btn:hover {
-  color: var(--purple-hover-color);
+  color: var(--purple-hover-color); /* make sure this variable exists */
 }
 
-/* Media Queries */
+/* ---------------------------- */
+/*         SKILL SECTION       */
+/* ---------------------------- */
+
+.skill-section {
+  background-color: var(--grey-color);
+  padding: 0 20px;
+}
+
+.skill-content {
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.skill-group {
+  margin-bottom: 50px;
+}
+
+.skill-group .sub-headline {
+  font-size: var(--font-size-subheadline);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skill-group ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  list-style: none;
+}
+
+.skill-group img {
+  width: 130px;
+  height: 130px;
+}
+
+/* ---------------------------- */
+/*        MEDIA QUERIES        */
+/* ---------------------------- */
+
 @media (max-width: 768px) {
+  .headline {
+    font-size: var(--font-size-headline-mb);
+  }
+
   .nav-menu {
     display: none;
+  }
+
+  .hero {
+    height: auto;
   }
 
   .hero-content {
@@ -208,5 +301,18 @@ nav {
     align-items: center;
     margin: 15px;
     gap: 15px;
+  }
+
+  .skill-group .sub-headline {
+    font-size: var(--font-size-subheadline-mb);
+  }
+
+  .skill-group ul {
+    gap: 20px;
+  }
+
+  .skill-group img {
+    width: 60px;
+    height: 60px;
   }
 }
