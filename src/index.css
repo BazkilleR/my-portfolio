@@ -124,6 +124,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -263,7 +264,8 @@ nav {
   }
 
   .hero {
-    height: auto;
+    max-height: none;
+    padding-bottom: 50px;
   }
 
   .hero-content {
