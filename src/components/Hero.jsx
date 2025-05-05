@@ -21,10 +21,10 @@ const Hero = () => {
               View Resume
             </a>
             <div className="hero-contacts-icons">
-              <a href="#" target="_blank">
+              <a href="mailto:ohm.ratchaphon@gmail.com" target="_blank">
                 <img src="/icons/email.png" alt="Email_Icon" />
               </a>
-              <a href="#" target="_blank">
+              <a href="tel:+66989533977" target="_blank">
                 <img src="/icons/tel.png" alt="Tel_Icon" />
               </a>
               <a href="https://github.com/BazkilleR" target="_blank">

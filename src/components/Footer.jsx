@@ -1,10 +1,4 @@
 const Footer = () => {
-  const socialLinks = [
-    { href: "#", alt: "email-icon", img: "/icons/email.png" },
-    { href: "#", alt: "tel-icon", img: "/icons/tel.png" },
-    { href: "#", alt: "github-icon", img: "/icons/github.png" },
-  ];
-
   return (
     <footer>
       <div className="footer-content">
@@ -12,13 +6,15 @@ const Footer = () => {
 
         <div className="social-links">
           <ul>
-            {socialLinks.map((link, index) => (
-              <li key={index}>
-                <a href={link.href}>
-                  <img src={link.img} alt={link.alt} />
-                </a>
-              </li>
-            ))}
+            <a href="mailto:ohm.ratchaphon@gmail.com" target="_blank">
+              <img src="/icons/email.png" alt="Email_Icon" />
+            </a>
+            <a href="tel:+66989533977" target="_blank">
+              <img src="/icons/tel.png" alt="Tel_Icon" />
+            </a>
+            <a href="https://github.com/BazkilleR" target="_blank">
+              <img src="/icons/github.png" alt="Github_Icon" />
+            </a>
           </ul>
         </div>
       </div>
