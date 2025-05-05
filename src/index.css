@@ -34,7 +34,7 @@
 
 body {
   font-family: "Montserrat", "Inter", sans-serif;
-  background-color: #1e1e1e;
+  background-color: var(--black-color);
   color: var(--white-color);
 }
 
@@ -186,7 +186,6 @@ nav {
 .hero-img img {
   width: 500px;
   height: 500px;
-  background-color: var(--grey-color);
   object-fit: cover;
   border-radius: 5px;
 }
