@@ -1,5 +1,5 @@
 const ProjectTech = ({ techName }) => {
-  return <p>{techName}</p>;
+  return <p className="tech-item">{techName}</p>;
 };
 
 export default ProjectTech;
