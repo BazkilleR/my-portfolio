@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <Skill />
       <Project />
-      <div>
+      <div className="experience-education">
         <Experience />
         <Education />
       </div>

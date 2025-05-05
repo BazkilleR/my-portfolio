@@ -1,12 +1,14 @@
 const Experience = () => {
   return (
     <section className="experience-section">
-      <h2>Experience</h2>
+      <div className="headline-container">
+        <h2 className="headline gradient-purple">Experience</h2>
+      </div>
       <div className="e-card">
-        <p className="date">2032</p>
-        <h3 className="e-title">Full-Stack Developer</h3>
-        <p className="e-sub">Sharegreenth</p>
-        <p className="e-descr">
+        <p className="date">2023</p>
+        <h3 className="title">Full-Stack Developer</h3>
+        <p className="sub">Sharegreen.th</p>
+        <p className="descr">
           <ul>
             <li>
               Developed a responsive website for an environmental art contest to

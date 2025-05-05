@@ -1,17 +1,20 @@
 const Education = () => {
   return (
-    <section className="education">
-      <h2>Education</h2>
+    <section className="education-section">
+      <div className="headline-container">
+        <h2 className="headline gradient-purple">Education</h2>
+      </div>
       <div className="e-card">
         <p className="date">July 2024 - Present</p>
-        <h3 className="e-title">
+        <h3 className="title">
           King Mongkut’s Insitude of Technology LadKrabang
         </h3>
-        <p className="e-descr">
+        <p className="descr">
           Bachelor of Science Program in Information Technology,
-          <span>3.63 GPA</span>
+          <span className="gpa"> 3.63 GPA</span>
+          <br />
+          Major in Information Technology
         </p>
-        <div className="e-descr">Major in Information Technology</div>
       </div>
     </section>
   );

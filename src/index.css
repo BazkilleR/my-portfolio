@@ -1,15 +1,12 @@
 /* ---------------------------- */
-/*      IMPORT GOOGLE FONTS    */
+/*        IMPORT FONTS         */
 /* ---------------------------- */
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* ---------------------------- */
-/*         ROOT VARIABLES      */
+/*        ROOT VARIABLES       */
 /* ---------------------------- */
-
 :root {
   --font-size-headline: 48px;
   --font-size-headline-mb: 36px;
@@ -20,19 +17,19 @@
 
   --white-color: #fffffe;
   --purple-color: #7f5af0;
+  --purple-hover-color: #a78bfa;
   --black-color: #16161a;
   --grey-color: #242629;
   --detail-color: #4c5560;
 }
 
 /* ---------------------------- */
-/*         GLOBAL STYLES       */
+/*         GLOBAL RESET        */
 /* ---------------------------- */
-
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -42,9 +39,8 @@ body {
 }
 
 /* ---------------------------- */
-/*          TEXT STYLES        */
+/*         TEXT STYLES         */
 /* ---------------------------- */
-
 .gradient-purple {
   background: linear-gradient(90deg, #7f5af0 0%, #ffffff 70%);
   background-clip: text;
@@ -53,19 +49,19 @@ body {
 
 .headline-container {
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .headline {
   font-family: "Montserrat", sans-serif;
-  display: inline;
   font-size: var(--font-size-headline);
   font-weight: 700;
+  display: inline;
 }
 
 /* ---------------------------- */
 /*         NAVIGATION          */
 /* ---------------------------- */
-
 nav {
   background-color: var(--black-color);
   height: 80px;
@@ -75,10 +71,10 @@ nav {
 .nav-content {
   max-width: 1280px;
   margin: 0 auto;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
 }
 
 .nav-logo {
@@ -94,22 +90,21 @@ nav {
 }
 
 .nav-menu ul li a {
-  text-decoration: none;
-  color: var(--white-color);
   font-size: 18px;
   font-weight: 400;
+  text-decoration: none;
+  color: var(--white-color);
   padding: 10px 20px;
+  border-radius: 5px;
 }
 
 .nav-menu ul li a:hover {
   background-color: var(--grey-color);
-  border-radius: 5px;
 }
 
 /* ---------------------------- */
 /*         HERO SECTION        */
 /* ---------------------------- */
-
 .hero {
   background-color: var(--black-color);
   padding: 0 20px;
@@ -120,10 +115,10 @@ nav {
 .hero-content {
   max-width: 1280px;
   margin: 0 auto;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   overflow: hidden;
 }
 
@@ -135,6 +130,7 @@ nav {
   font-size: 64px;
   font-weight: 700;
   line-height: 70px;
+  margin: 10px 0;
 }
 
 .sub-hero {
@@ -150,15 +146,23 @@ nav {
   margin-top: 20px;
 }
 
-/* ---------------------------- */
-/*       HERO CONTACTS         */
-/* ---------------------------- */
+.hero-img img {
+  width: 500px;
+  height: 500px;
+  background-color: var(--grey-color);
+  object-fit: cover;
+  border-radius: 5px;
+}
 
+/* ---------------------------- */
+/*        HERO CONTACTS        */
+/* ---------------------------- */
 .hero-contacts {
   display: flex;
+  align-items: center;
   gap: 25px;
   margin-top: 45px;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .hero-contacts-icons {
@@ -182,48 +186,34 @@ nav {
 }
 
 /* ---------------------------- */
-/*         HERO IMAGE          */
-/* ---------------------------- */
-
-.hero-img img {
-  width: 500px;
-  height: 500px;
-  background-color: var(--grey-color);
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-/* ---------------------------- */
 /*         RESUME BUTTON       */
 /* ---------------------------- */
-
 .resume-btn {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: var(--purple-color);
+  color: var(--white-color);
   text-decoration: none;
   font-size: 18px;
-  color: var(--white-color);
 }
 
 .resume-btn:hover {
-  color: var(--purple-hover-color); /* make sure this variable exists */
+  color: var(--purple-hover-color);
 }
 
 /* ---------------------------- */
-/*         SKILL SECTION       */
+/*        SKILLS SECTION       */
 /* ---------------------------- */
-
 .skill-section {
   background-color: var(--grey-color);
   padding: 0 20px;
 }
 
 .skill-content {
-  text-align: center;
   max-width: 1280px;
   margin: 0 auto;
   padding: 50px 0;
+  text-align: center;
 }
 
 .skill-group {
@@ -250,21 +240,19 @@ nav {
   height: 130px;
 }
 
+/* ---------------------------- */
+/*       PROJECT SECTION       */
+/* ---------------------------- */
 .project-content {
   max-width: 1280px;
   margin: 0 auto;
   padding: 50px 0;
 }
 
-.headline-container {
-  text-align: center;
-}
-
 .project-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -274,21 +262,20 @@ nav {
   width: 400px;
 }
 
-.project-info {
-  padding: 10px;
-}
-
 .project-card img {
   width: 100%;
   height: 250px;
   border-radius: 5px 5px 0 0;
 }
 
+.project-info {
+  padding: 10px;
+}
+
 .project-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .project-title h3 {
@@ -310,10 +297,10 @@ nav {
 }
 
 .project-tech {
-  margin-top: 30px;
   display: flex;
   align-items: center;
   gap: 5px;
+  margin-top: 30px;
 }
 
 .tech-item {
@@ -332,10 +319,55 @@ nav {
 .external-link:hover {
   background-color: var(--black-color);
 }
+
+/* ---------------------------- */
+/*     EXPERIENCE & EDUCATION  */
+/* ---------------------------- */
+.experience-education {
+  background-color: var(--grey-color);
+  padding: 50px 20px;
+}
+
+.experience-section,
+.education-section {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.e-card {
+  background-color: var(--black-color);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+.e-card .date,
+.e-card .sub,
+.gpa {
+  color: var(--purple-color);
+}
+
+.e-card .title {
+  font-size: var(--font-size-subheadline);
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.e-card .descr {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--font-size-paragraph);
+  font-weight: 400;
+  color: var(--detail-color);
+  margin-top: 10px;
+}
+
+.e-card .descr ul {
+  margin-left: 30px;
+}
+
 /* ---------------------------- */
 /*        MEDIA QUERIES        */
 /* ---------------------------- */
-
 @media (max-width: 768px) {
   .headline {
     font-size: var(--font-size-headline-mb);
@@ -363,7 +395,6 @@ nav {
   .hero-name {
     font-size: var(--font-size-headline-mb);
     line-height: var(--font-size-headline-mb);
-    margin: 10px 0;
   }
 
   .sub-hero {
@@ -382,8 +413,7 @@ nav {
 
   .hero-contacts {
     flex-direction: column;
-    align-items: center;
-    margin: 15px;
+    margin: 15px 0;
     gap: 15px;
   }
 
